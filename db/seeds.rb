@@ -16,5 +16,5 @@ songs = [{artist_name: "The Killers", title: "Mr. Brightside"},
          {artist_name: "Pixies", title: "Monkey Gone to Heaven"}]
 
 songs.each do |song|
-  Song.create(song)
+  Song.create!(song)
 end
