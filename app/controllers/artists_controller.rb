@@ -4,7 +4,8 @@ class ArtistsController < ApplicationController
   end
 
   def show
-    @artist = Artist.find(params[:id])
+    @artist = Artist.find(params[:id]) 
+   
   end
 
   def new
@@ -16,7 +17,7 @@ class ArtistsController < ApplicationController
 
     if @artist.save
       redirect_to @artist
-    else
+    else 
       render :new
     end
   end
